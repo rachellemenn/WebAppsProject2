@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Above is the CSS reset taken from an online source*/
+
+body, * {
+    background-color: rgb(250, 250, 250);
+    margin: 0;
+    color: rgb(115, 115, 115);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 100vw;
+    overflow: auto;
+}
+
+.title {
+    color: rgb(115, 115, 115);
+    color: hsl(0, 0%, 45%);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    display: inline;
+    padding-bottom: 60px;
+    word-spacing: 0.25px;
+}
+
+    .title .quiz {
+        color: rgb(255, 102, 0);
+        color: hsl(24, 100%, 50%);
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 60px;
+        text-decoration: none;
+        display: inline;
+        padding-bottom: 70px;
+    }
+
+#button {
+    padding-top: 50px;
+    align-items: center;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+    #button input {
+        outline: none;
+        font-family: "Barlow Condensed", sans-serif;
+        color: rgb(250, 250, 250);
+        font-size: 40px;
+        text-align: justify;
+        border: 5px;
+        border-style: solid;
+        border-color: rgb(255, 102, 0);
+        border-color: hsl(24, 100%, 50%);
+        background-color: rgb(255, 102, 0);
+        background-color: hsl(24, 100%, 50%);
+        border-radius: 20px;
+    }
+
+        #button input:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+.title a {
+    color: rgb(115, 115, 115);
+    color: hsl(0, 0%, 45%);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    padding-right: 0.25px;
+    word-spacing: 0.25px;
+}
+
+    .title a .quiz {
+        color: rgb(255, 102, 0);
+        color: hsl(24, 100%, 50%);
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 70px;
+        text-decoration: none;
+    }
+
+        .title a .quiz:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+#question {
+    color: rgb(115, 115, 115);
+    color: hsl(0, 0%, 45%);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    max-width: 80vw;
+}
+
+#answers {
+    color: rgb(115, 115, 115);
+    color: hsl(0, 0%, 45%);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    flex: auto;
+}
+
+    #answers td {
+        padding-bottom: 0.5em;
+    }
+
+    #answers input[type="radio"] {
+        cursor: pointer;
+        color: rgb(255, 102, 0);
+        color: hsl(24, 100%, 50%);
+        vertical-align: top;
+        margin-right: 15px;
+        margin-top: 7px;
+        text-align: left;
+        float: left;
+    }
+
+    #answers label {
+        flex: auto;
+        cursor: pointer;
+    }
+
+    #answers span {
+        vertical-align: top;
+        float: left;
+        padding-left: 15px;
+        margin-top: -2px;
+    }
+
+/* Changes the colour of the selected option */
+
+    #answers input[type="radio"]:after {
+        color: rgb(255, 102, 0);
+        color: hsl(24, 100%, 50%);
+    }
+
+    #answers input[type="radio"]:checked + span {
+        color: rgb(255, 102, 0);
+        color: hsl(24, 100%, 50%);
+    }
+
+    #answers:hover input {
+        background: rgb(255, 102, 0);
+        background: hsl(24, 100%, 50%);
+    }
